@@ -9,7 +9,7 @@ public interface EmissionFactorService {
 
     EmissionFactor getFactor(Long id);
 
-    EmissionFactor getFactorByType(Long activityTypeId);
+    EmissionFactor getFactorByType(Long typeId);
 
     List<EmissionFactor> getAllFactors();
 }
