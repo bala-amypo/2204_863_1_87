@@ -5,7 +5,13 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 @Service
-public interface UserServiceImpl {
-    ActivityCategory createCategory(ActivityCategory category);
-    List<ActivityCategory> getAllCategories();
+public class UserServiceImpl implements UserService {
+
+    private final UserRepository userRepository;
+
+    public UserServiceImpl(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+
+    // methods...
 }
